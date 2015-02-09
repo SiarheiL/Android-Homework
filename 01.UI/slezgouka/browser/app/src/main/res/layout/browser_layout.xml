@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+           android:id="@+id/control_layout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:orientation="horizontal"
+           >
+           <EditText
+               android:id="@+id/url_input"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:inputType="textUri"
+               tools:text="Enter url"
+               />
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/back_forward_controls"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/control_layout"
+       android:orientation="horizontal"
+        >
+        <Button
+           android:id="@+id/go_button"
+           android:layout_width="0dp"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="@string/go"
+           />
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/back"
+            />
+        <Button
+            android:id="@+id/forward_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/forward"
+            />
+        <Button
+            android:id="@+id/reload_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/reload"
+            />
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/stop"
+            />
+
+       <Button
+           android:id="@+id/history_button"
+           android:layout_width="0dp"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="@string/history"
+           />
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/web_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/back_forward_controls"
+        >
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></WebView>
+    </LinearLayout>
+
+
+</RelativeLayout>
