@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="plus_operation">Сложение</string>
+    <string name="minus_operation">Вычитание</string>
+    <string name="multiply_operation">Умножение</string>
+    <string name="devide_operation">Деление</string>
+    <string name="perform_operation">Выполнить</string>
+    <string name="dlg_msg_default">Дефолтовый диалог. Нажмите ОК</string>
+    <string name="dlg_msg_incorrect_operand"></string>
+    <string name="dlg_msg_on_OK_btn">ОК</string>
+    <string name="dlg_msg_operator_empty">Выберите оператор. Оператор не выбран</string>
+    <string name="msg_empty_operand">Пустой операнд</string>
+    <string name="msg_illegal_operand">Недопустимый операнд</string>
+    <string name="msg_operator_not_select">Выберите оператор. Оператор не выбран</string>
+    <string name="result_format">Результат: %.2f</string>
+    <string name="operand_hint">Операнд</string>
+
+</resources>
